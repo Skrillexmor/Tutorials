@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TutorialActivity6">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tt6_login_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sansita"
+            android:text="@string/tt6_login"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tt6_uname_label"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/tt6_email"
+            android:textColorHint="@color/black"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/main"
+            app:hintTextColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/tt6_login_label"
+            app:startIconDrawable="@drawable/ic_baseline_person"
+            app:startIconTint="@color/main">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tt6_username1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:textColor="@color/black" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tt6_pass_label"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tt6_uname_label"
+            android:hint="@string/tt6_password"
+            android:textColorHint="@color/black"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/main"
+            app:hintTextColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/tt6_uname_label"
+            app:startIconDrawable="@drawable/ic_baseline_lock"
+            app:startIconTint="@color/main"
+            tools:layout_editor_absoluteX="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tt6_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tt6_Login_Button"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="145dp"
+            android:layout_height="60dp"
+            android:layout_alignEnd="@+id/tt6_pass_label"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/main"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
+            android:text="@string/Login"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt6_pass_label" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

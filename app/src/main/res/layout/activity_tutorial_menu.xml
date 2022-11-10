@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    tools:context=".Tutorial_Menu">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/SwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/main_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <!-- Tutorial 1 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tt1_card"
+                    style="@style/Widget.Material3.CardView.Elevated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/light_main"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingStart="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tt1_name"
+                                android:textAppearance="?attr/textAppearanceTitleMedium"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt1_title"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt1_desc"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="10dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.ElevatedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:backgroundTint="@color/main"
+                                android:onClick="tt1_Call"
+                                android:text="@string/tt1_open"
+                                android:textColor="@color/light_main" />
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="tt1_code_btn"
+                                android:text="@string/tt1_code"
+                                android:textColor="@color/main"
+                                app:icon="@drawable/ic_baseline_code_24"
+                                app:iconTint="@color/main" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Tutorial 2 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tt2_card"
+                    style="@style/Widget.Material3.CardView.Elevated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/light_main"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tt1_card"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingStart="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tt2_name"
+                                android:textAppearance="?attr/textAppearanceTitleMedium"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt2_title"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt2_desc"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="10dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.ElevatedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:backgroundTint="@color/main"
+                                android:onClick="tt2_Call"
+                                android:text="@string/tt2_open"
+                                android:textColor="@color/light_main" />
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="tt2_code_btn"
+                                android:text="@string/tt2_code"
+                                android:textColor="@color/main"
+                                app:icon="@drawable/ic_baseline_code_24"
+                                app:iconTint="@color/main" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Tutorial 3 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tt3_card"
+                    style="@style/Widget.Material3.CardView.Elevated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/light_main"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tt2_card"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingStart="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tt3_name"
+                                android:textAppearance="?attr/textAppearanceTitleMedium"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt3_title"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt3_desc"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="10dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.ElevatedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:backgroundTint="@color/main"
+                                android:onClick="tt3_Call"
+                                android:text="@string/tt3_open"
+                                android:textColor="@color/light_main" />
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="tt3_code_btn"
+                                android:text="@string/tt3_code"
+                                android:textColor="@color/main"
+                                app:icon="@drawable/ic_baseline_code_24"
+                                app:iconTint="@color/main" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Tutorial 4 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tt4_card"
+                    style="@style/Widget.Material3.CardView.Elevated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/light_main"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tt3_card"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingStart="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tt4_name"
+                                android:textAppearance="?attr/textAppearanceTitleMedium"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt4_title"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt4_desc"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="10dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.ElevatedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:backgroundTint="@color/main"
+                                android:onClick="tt4_Call"
+                                android:text="@string/tt4_open"
+                                android:textColor="@color/light_main" />
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="tt4_code_btn"
+                                android:text="@string/tt4_code"
+                                android:textColor="@color/main"
+                                app:icon="@drawable/ic_baseline_code_24"
+                                app:iconTint="@color/main" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Tutorial 5 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tt5_card"
+                    style="@style/Widget.Material3.CardView.Elevated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/light_main"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tt4_card"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingStart="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tt5_name"
+                                android:textAppearance="?attr/textAppearanceTitleMedium"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt5_title"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt5_desc"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="10dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.ElevatedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:backgroundTint="@color/main"
+                                android:onClick="tt5_Call"
+                                android:text="@string/tt5_open"
+                                android:textColor="@color/light_main" />
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="tt5_code_btn"
+                                android:text="@string/tt5_code"
+                                android:textColor="@color/main"
+                                app:icon="@drawable/ic_baseline_code_24"
+                                app:iconTint="@color/main" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Tutorial 6 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tt6_card"
+                    style="@style/Widget.Material3.CardView.Elevated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/light_main"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tt5_card"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingStart="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tt6_name"
+                                android:textAppearance="?attr/textAppearanceTitleMedium"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt6_title"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt6_desc"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="10dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.ElevatedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:backgroundTint="@color/main"
+                                android:onClick="tt6_Call"
+                                android:text="@string/tt6_open"
+                                android:textColor="@color/light_main" />
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="tt6_code_btn"
+                                android:text="@string/tt6_code"
+                                android:textColor="@color/main"
+                                app:icon="@drawable/ic_baseline_code_24"
+                                app:iconTint="@color/main" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Tutorial 7 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tt7_card"
+                    style="@style/Widget.Material3.CardView.Elevated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/light_main"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tt6_card"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingStart="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tt7_name"
+                                android:textAppearance="?attr/textAppearanceTitleMedium"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt7_title"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt7_desc"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="10dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.ElevatedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:backgroundTint="@color/main"
+                                android:onClick="tt7_Call"
+                                android:text="@string/tt7_open"
+                                android:textColor="@color/light_main" />
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="tt6_code_btn"
+                                android:text="@string/tt7_code"
+                                android:textColor="@color/main"
+                                app:icon="@drawable/ic_baseline_code_24"
+                                app:iconTint="@color/main" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Tutorial 8 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tt8_card"
+                    style="@style/Widget.Material3.CardView.Elevated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/light_main"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tt7_card"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingStart="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tt8_name"
+                                android:textAppearance="?attr/textAppearanceTitleMedium"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt8_title"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt8_desc"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="10dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/tt8_open"
+                                style="@style/Widget.Material3.Button.ElevatedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:backgroundTint="@color/main"
+                                android:text="@string/tt8_open"
+                                android:textColor="@color/light_main" />
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tt8_code"
+                                android:textColor="@color/main"
+                                app:icon="@drawable/ic_baseline_code_24"
+                                app:iconTint="@color/main" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Tutorial 9 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tt9_card"
+                    style="@style/Widget.Material3.CardView.Elevated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/light_main"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tt8_card"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingStart="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tt9_name"
+                                android:textAppearance="?attr/textAppearanceTitleMedium"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt9_title"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt9_desc"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="10dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/tt9_open"
+                                style="@style/Widget.Material3.Button.ElevatedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:backgroundTint="@color/main"
+                                android:text="@string/tt9_open"
+                                android:textColor="@color/light_main" />
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tt9_code"
+                                android:textColor="@color/main"
+                                app:icon="@drawable/ic_baseline_code_24"
+                                app:iconTint="@color/main" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Tutorial 10 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tt10_card"
+                    style="@style/Widget.Material3.CardView.Elevated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/light_main"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tt9_card"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingStart="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tt10_name"
+                                android:textAppearance="?attr/textAppearanceTitleMedium"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt10_title"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt10_desc"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="10dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/tt10_open"
+                                style="@style/Widget.Material3.Button.ElevatedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:backgroundTint="@color/main"
+                                android:text="@string/tt10_open"
+                                android:textColor="@color/light_main" />
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tt10_code"
+                                android:textColor="@color/main"
+                                app:icon="@drawable/ic_baseline_code_24"
+                                app:iconTint="@color/main" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Tutorial 12 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tt12_card"
+                    style="@style/Widget.Material3.CardView.Elevated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/light_main"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tt10_card"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingStart="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tt12_name"
+                                android:textAppearance="?attr/textAppearanceTitleMedium"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt12_title"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt12_desc"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="10dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/tt12_open"
+                                style="@style/Widget.Material3.Button.ElevatedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:backgroundTint="@color/main"
+                                android:text="@string/tt12_open"
+                                android:textColor="@color/light_main" />
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="tt6_code_btn"
+                                android:text="@string/tt12_code"
+                                android:textColor="@color/main"
+                                app:icon="@drawable/ic_baseline_code_24"
+                                app:iconTint="@color/main" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Tutorial 13 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tt13_card"
+                    style="@style/Widget.Material3.CardView.Elevated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/light_main"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tt12_card"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingStart="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tt13_name"
+                                android:textAppearance="?attr/textAppearanceTitleMedium"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt13_title"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tt13_desc"
+                                android:textAppearance="?attr/textAppearanceBodyMedium"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="10dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/tt13_open"
+                                style="@style/Widget.Material3.Button.ElevatedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:backgroundTint="@color/main"
+                                android:text="@string/tt13_open"
+                                android:textColor="@color/light_main" />
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="tt13_code_btn"
+                                android:text="@string/tt13_code"
+                                android:textColor="@color/main"
+                                app:icon="@drawable/ic_baseline_code_24"
+                                app:iconTint="@color/main" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

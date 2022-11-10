@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TutorialActivity5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tt5_fname_label"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tt5_fname"
+            android:textColorHint="@color/black"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/main"
+            app:hintTextColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconDrawable="@drawable/ic_baseline_person"
+            app:startIconTint="@color/main"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="20dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tt5_fname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:textColor="@color/black" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tt5_lname_label"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tt5_lname"
+            android:textColorHint="@color/black"
+            app:endIconMode="clear_text"
+            app:errorTextColor="@color/red"
+            app:hintTextColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/tt5_fname_label"
+            app:startIconDrawable="@drawable/ic_baseline_supervised_user"
+            app:startIconTint="@color/main"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="20dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tt5_lname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tt5_email_label"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tt5_email"
+            android:textColorHint="@color/black"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/main"
+            app:hintTextColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/tt5_lname_label"
+            app:startIconDrawable="@drawable/ic_baseline_mail"
+            app:startIconTint="@color/main"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="20dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tt5_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tt5_pass_label"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tt5_email_label"
+            android:hint="@string/tt5_pass"
+            android:textColorHint="@color/black"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/main"
+            app:hintTextColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/tt5_email_label"
+            app:startIconDrawable="@drawable/ic_baseline_lock"
+            app:startIconTint="@color/main"
+            tools:layout_editor_absoluteX="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tt5_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tt5_branch_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/tt5_branch_label"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt5_pass_label" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/tt5_switch"
+            style="@style/Widget.Material3.CompoundButton.Switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/tt5_branch_desc"
+            android:textOff="@string/tt5_branch_ce"
+            android:textOn="@string/tt5_branch_it"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt5_branch_label"
+            app:thumbTint="@color/main"
+            app:trackTint="@color/black"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tt5_gender_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/tt5_gender_label"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt5_switch" />
+
+        <RadioGroup
+            android:id="@+id/tt5_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt5_gender_text">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/ce_radio"
+                style="@style/Widget.Material3.CompoundButton.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/tt5_gender_male"
+                app:buttonTint="@color/main" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/it_radio"
+                style="@style/Widget.Material3.CompoundButton.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/tt5_gender_female"
+                app:buttonTint="@color/main" />
+
+        </RadioGroup>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/qua_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/tt5_city"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt5_radio_group" />
+
+        <Spinner
+            android:id="@+id/tt5_spinner_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/tt5_city_array"
+            android:paddingStart="25dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="25dp"
+            android:paddingBottom="10dp"
+            app:barrierAllowsGoneWidgets="true"
+            app:barrierDirection="bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qua_label" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/materialCheckBox"
+            style="@style/Widget.Material3.CompoundButton.CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/tt5_status_desc"
+            android:textColor="@color/light_black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:buttonTint="@color/main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tt5_spinner_city" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tt5_signUp_btn"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="145dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/main"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
+            android:text="@string/tt5_signUp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCheckBox" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

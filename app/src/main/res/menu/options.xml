@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home_menu"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_house_24"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/help"
+        android:orderInCategory="100"
+        android:title="@string/help"/>
+    <item
+        android:id="@+id/Code"
+        android:title="@string/code" />
+    <item
+        android:id="@+id/call"
+        android:title="@string/call" />
+</menu>

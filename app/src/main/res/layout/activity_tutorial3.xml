@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TutorialActivity3">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/login_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sansita"
+            android:text="@string/Login"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/uname_label"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/tt3_edit1_placeholder_name"
+            android:textColorHint="@color/black"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/main"
+            app:hintTextColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/login_label"
+            app:startIconDrawable="@drawable/ic_baseline_person"
+            app:startIconTint="@color/main"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="20dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:textColor="@color/black" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pass_label"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uname_label"
+            android:layout_marginTop="5dp"
+            android:hint="@string/tt3_edit2_placeholder_name"
+            android:textColorHint="@color/black"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/main"
+            app:hintTextColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/uname_label"
+            app:startIconDrawable="@drawable/ic_baseline_lock"
+            app:startIconTint="@color/main">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="#757575"
+                tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Login_Button"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="145dp"
+            android:layout_height="60dp"
+            android:layout_alignEnd="@+id/pass_label"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/main"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
+            android:text="@string/Login"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pass_label"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

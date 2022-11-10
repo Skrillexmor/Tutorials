@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TutorialSignUpActivity8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tt8_fname_label"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tt5_fname"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tt8_fname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/fname_icon_selector"
+                android:drawablePadding="16dp"
+                android:inputType="textAutoCorrect|textCapSentences|text" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tt8_lname_label"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tt5_lname"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt8_fname_label">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tt8_lname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/lname_icon_selector"
+                android:drawablePadding="16dp"
+                android:inputType="textCapSentences|textAutoCorrect|text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signup_tt8_email_label"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tt8_email"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt8_lname_label">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_tt8_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/email_icon_selector"
+                android:drawablePadding="16dp"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signup_tt8_pass_label"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tt5_pass"
+            app:counterEnabled="true"
+            app:counterMaxLength="8"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_tt8_email_label">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_tt8_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/lock_icon_selector"
+                android:drawablePadding="16dp"
+                android:inputType="textPassword"
+                android:maxLength="8" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tt8_branch_label"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:hint="@string/tt5_branch_label"
+            app:endIconMode="dropdown_menu"
+            app:endIconTint="@color/main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signup_tt8_pass_label">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/tt8_AutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/category_icon_selector"
+                android:drawablePadding="16dp"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tt8_gender_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/tt5_gender_label"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt8_branch_label" />
+
+        <RadioGroup
+            android:id="@+id/tt8_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt8_gender_text">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/male_radio"
+                style="@style/Widget.Material3.CompoundButton.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/tt5_gender_male"
+                app:buttonTint="@color/main" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/female_radio"
+                style="@style/Widget.Material3.CompoundButton.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/tt5_gender_female"
+                app:buttonTint="@color/main" />
+
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signup_tt8_signUp_btn"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/main"
+            android:text="@string/tt8_signup"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt8_radio_group" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tt8_Reg_Log_Button"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/tt8_login"
+            android:textColor="@color/main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_tt8_signUp_btn" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/tt8_reg_progressbar"
+            style="@style/Widget.Material3.CircularProgressIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:indeterminate="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt8_Reg_Log_Button"
+            app:trackColor="@color/main" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

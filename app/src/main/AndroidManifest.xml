@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App06_29"
+        tools:targetApi="31">
+        <activity
+            android:name=".TutorialActivity8Output"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TutorialSignUpActivity8"
+            android:exported="false"
+            android:parentActivityName=".TutorialActivity8">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TutorialActivity7Output"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TutorialSignUpActivity7"
+            android:exported="false"
+            android:parentActivityName=".TutorialActivity7">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TutorialActivity8"
+            android:exported="false"
+            android:parentActivityName=".Tutorial_Menu">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TutorialActivity9"
+            android:exported="false"
+            android:parentActivityName=".Tutorial_Menu">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TutorialActivity10"
+            android:exported="false"
+            android:parentActivityName=".Tutorial_Menu">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TutorialActivity12"
+            android:exported="false"
+            android:parentActivityName=".Tutorial_Menu">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TutorialActivity13"
+            android:exported="false"
+            android:parentActivityName=".Tutorial_Menu">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TutorialActivity7"
+            android:exported="false"
+            android:parentActivityName=".Tutorial_Menu">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TutorialActivity6Output"
+            android:exported="false" />
+        <activity
+            android:name=".TutorialActivity6"
+            android:exported="false"
+            android:parentActivityName=".Tutorial_Menu" />
+        <activity
+            android:name=".TutorialActivity5Output"
+            android:exported="false"
+            android:parentActivityName=".TutorialActivity5" />
+        <activity
+            android:name=".TutorialActivity5"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TutorialActivity4Output"
+            android:exported="false"
+            android:parentActivityName=".TutorialActivity4" />
+        <activity
+            android:name=".TutorialActivity4"
+            android:exported="false"
+            android:parentActivityName=".Tutorial_Menu" />
+        <activity
+            android:name=".ttSplashActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".TutorialActivity1"
+            android:exported="false"
+            android:label="Hello RKU"
+            android:parentActivityName=".Tutorial_Menu" />
+        <activity
+            android:name=".TutorialActivity3Output"
+            android:exported="false"
+            android:parentActivityName=".TutorialActivity3" />
+        <activity
+            android:name=".TutorialActivity3"
+            android:exported="false"
+            android:parentActivityName=".Tutorial_Menu" />
+        <activity
+            android:name=".TutorialActivity2"
+            android:exported="false"
+            android:parentActivityName=".Tutorial_Menu" />
+        <activity
+            android:name=".Tutorial_Menu"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

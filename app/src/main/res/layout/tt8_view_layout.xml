@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="16dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tt1_card"
+        style="@style/Widget.Material3.CardView.Outlined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="15dp">
+
+                <TextView
+                    android:id="@+id/tt8_fname_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/fname_user_onfocus"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="@string/tt1_name"
+                    android:textAppearance="?attr/textAppearanceTitleMedium"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tt8_lname_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableStart="@drawable/supervisied_user_onfocus"
+                    android:drawablePadding="8dp"
+                    android:text="@string/tt1_name"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tt8_email_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableStart="@drawable/email_onfocus"
+                    android:drawablePadding="8dp"
+                    android:text="@string/tt1_name"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tt8_pass_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableStart="@drawable/ic_round_remove_red_eye_24"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/main"
+                    android:text="@string/tt1_name"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tt8_branch_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableStart="@drawable/category_onfocus"
+                    android:drawablePadding="8dp"
+                    android:text="@string/tt1_name"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tt8_gender_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableStart="@drawable/ic_round_transgender_24"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/main"
+                    android:text="@string/tt1_name"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

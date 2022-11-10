@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".TutorialActivity9">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tt9_content_label"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tt9_content"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tt9_content_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/folder_icon_selector"
+                android:drawablePadding="16dp"
+                android:inputType="textAutoComplete|textCapSentences|text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tt9_ViewAssets_Button"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/main"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/tt9_ViewAssets"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt9_content_label" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tt9_read_btn"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/tt9_read_button"
+            android:textColor="@color/main"
+            app:layout_constraintEnd_toStartOf="@+id/tt9_write_btn"
+            app:layout_constraintStart_toEndOf="@+id/tt9_ViewAssets_Button"
+            app:layout_constraintTop_toBottomOf="@+id/tt9_content_label" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tt9_write_btn"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/main"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/tt9_write_button"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt9_content_label" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tt9_textView_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt9_read_btn" />
+
+        <ListView
+            android:id="@+id/List_View"
+            android:layout_width="match_parent"
+            android:layout_height="425dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt9_textView_show" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

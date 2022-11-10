@@ -1,0 +1,255 @@
+<resources>
+    <string name="app_name">21SOECE13030</string>
+    <string name="help">Help</string>
+    <string name="code">Code</string>
+    <string name="call">Call</string>
+    <string name="share">Share</string>
+    <string name="QRScan">QR Scan</string>
+    <string name="Github">GitHub</string>
+    <string name="tts_name">Tutorials</string>
+    <string name="dev_name">Ishika Jethva</string>
+    <string name="dev_by">By : </string>
+
+    <!-- Tutorial 1 -->
+    <string name="tt1_name">Tutorial 1 : </string>
+    <string name="tt1_title">Develop Application Which Display “Welcome to RK University” Program with Following Attributes :</string>
+    <string name="tt1_desc">1. Text should be with red color.
+        \n2. Text should be used from string.xml.
+        \n3. Text size should be 24sp.
+        \n4. Text style should be bold.
+        \n5. Text shadow should be there.
+        \n6. Background color from color.xml.
+        \n7. Change Application Name "Hello RKU".
+        \n8. Change Logo</string>
+    <string name="tt1_open">Open</string>
+    <string name="tt1_code">Code</string>
+
+    <!-- Tutorial 2 -->
+    <string name="tt2_name">Tutorial 2 : </string>
+    <string name="tt2_title">Develop Application Which Display “Welcome to RK University” Program with Following Attributes :</string>
+    <string name="tt2_desc">1. Set custom icon (512 X 512 PNG 24bit) of Application.
+        \n2. Set Application name “Your Enrollment No”.
+        \n3. Set Application title “About”.
+        \n4. Set Version Name “as per your choice”
+        \n(eg. Alpha / first / 1.0.1).
+        \n5. Set Version Code to 1(one in digit).
+        \n6. Set Permission of “Internet”.</string>
+    <string name="tt2_open">Open</string>
+    <string name="tt2_code">Code</string>
+
+    <!-- Tutorial 3 -->
+    <string name="tt3_name">Tutorial 3 : </string>
+    <string name="tt3_title">Create a Login activity with email as username and password : </string>
+    <string name="tt3_desc">On Login button click,
+        \nif a username is admin@gmail.com and password is admin than open new activity with ”Welcome” message should open.</string>
+    <string name="tt3_open">Open</string>
+    <string name="tt3_code">Code</string>
+
+    <!-- Tutorial 4 -->
+    <string name="tt4_name">Tutorial 4 : </string>
+    <string name="tt4_title">In tutorial 03, add one more screen as Splash Screen for a ”Welcome” message with logo/Text. After 2 seconds it should open Login Screen. Also, add email validation in the Login form : </string>
+    <string name="tt4_desc">1. For auto-execute any task after some delay or to do some task periodically use ”Timer” class.
+        \n2. To validate any input Regular Expiration (Regex) is the most efficient way.
+        \n3. For that android has ”Patterns” class.
+        \n4. To have control of the screen orientation.</string>
+    <string name="tt4_open">Open</string>
+    <string name="tt4_code">Code</string>
+
+    <!-- Tutorial 5 -->
+    <string name="tt5_name">Tutorial 5 : </string>
+    <string name="tt5_title">If in Tutorial 04, User does not have an account with your app, then create a registration form for them, with the following fields : </string>
+    <string name="tt5_desc">1. First Name (EditText).
+        \n2. Last Name (EditText).
+        \n3. Email as Username (EditText).
+        \n4. Password (EditText).
+        \n5. Gender (RadioGroup and RadioButton).
+        \n6. Branch CE/IT (Switch).
+        \n7. City (Spinner).
+        \n8. Register Me (Button).
+        \n9. Set back button functionality.
+    </string>
+    <string name="tt5_open">Open</string>
+    <string name="tt5_code">Code</string>
+
+    <!-- Tutorial 6 -->
+    <string name="tt6_name">Tutorial 6 : </string>
+    <string name="tt6_title">As the user has logged in once, he will not be asked for login until he logged out on each app launching. Provide Logout button in Option Menu : </string>
+    <string name="tt6_desc">1. Use SharedPreference for setting the state of login.
+        \n2. Use OptionMenu for logout option Menu.
+    </string>
+    <string name="tt6_open">Open</string>
+    <string name="tt6_code">Code</string>
+    <string name="tt6_loGout">Logout</string>
+    <string name="tt6_login">Login</string>
+    <string name="tt6_password">Password</string>
+    <string name="tt6_email">Email</string>
+
+    <!-- Tutorial 7 -->
+    <string name="tt7_name">Tutorial 7 : </string>
+    <string name="tt7_title">First of all, go through with this video link and develop practice code for SQLite Database :</string>
+    <string name="tt7_desc">As the user opens App, he should be asked for the login. If he is not registered yet, so provide a link for the registration screen. From the registration screen, he can create his user credential (first name, last name, email, gender-radio button, branch-spinner) and submit (Take reference of Tutorial-5).
+    </string>
+    <string name="tt7_open">Open</string>
+    <string name="tt7_code">Code</string>
+    <string name="tt7_loGout">Logout</string>
+    <string name="tt7_login">Login</string>
+    <string name="tt7_password">Password</string>
+    <string name="tt7_email">Email</string>
+    <string name="tt7_signup">Sign Up</string>
+    <string name="tt7_remember">Remember me</string>
+    <string name="tt7_welcome">Welcome to Tutorial 7</string>
+
+    <!-- Tutorial 8 -->
+    <string name="tt8_name">Tutorial 8 : </string>
+    <string name="tt8_title">Develop an application with reference to the given video and Download reference codeView. Mind well, you have to understand first the flow of code and then start development. Next, you have to implement the same logic for the next assignment:</string>
+    <string name="tt8_desc">In Tutorial 07, you have developed the Login Screen with Registration Screen with the database.  Now in this tutorial, you need to fetch the data from the database on the Welcome Screen (After successful login) and show users in the ListView. And on the click of any user, the next screen should open with all the detail of that user.</string>
+    <string name="tt8_open">Open</string>
+    <string name="tt8_code">Code</string>
+    <string name="tt8_login">Login</string>
+    <string name="tt8_password">Password</string>
+    <string name="tt8_email">Email</string>
+    <string name="tt8_signup">Sign Up</string>
+    <string name="tt8_remember">Remember me</string>
+    <string name="tt8_welcome">Welcome to Tutorial 7</string>
+
+    <!-- Tutorial 9 -->
+    <string name="tt9_name">Tutorial 9 : </string>
+    <string name="tt9_title">Create an Android Project to read the JSON file (Links to an external site) :</string>
+    <string name="tt9_desc">From the asset folder and also give the functionality to read and write content to internal file storage.</string>
+    <string name="tt9_content">Enter Text</string>
+    <string name="tt9_ViewAssets">View Assets</string>
+    <string name="tt9_read_button">Read</string>
+    <string name="tt9_write_button">Write</string>
+    <string name="tt9_open">Open</string>
+    <string name="tt9_code">Code</string>
+
+    <!-- Tutorial 10 -->
+    <string name="tt10_name">Tutorial 10 : </string>
+    <string name="tt10_title">In Tutorial 09 you have created an Android Project to read the JSON file from the asset folder :</string>
+    <string name="tt10_desc">Use the following code in tutorial 09 to fetch Json Data from the given URL and generate RecyclerView.</string>
+    <string name="tt10_open">Open</string>
+    <string name="tt10_code">Code</string>
+
+    <!-- Tutorial 12 -->
+    <string name="tt12_name">Tutorial 12 : </string>
+    <string name="tt12_title">Learn the flow of the Recycler view Concept :</string>
+    <string name="tt12_desc">Create a project and implement the concept that how the adapter works for Recycler View, and develop the code to fetch the data from using Volley Library and generate the following output using RecyclerView.</string>
+    <string name="tt12_open">Open</string>
+    <string name="tt12_code">Code</string>
+
+    <!-- Tutorial 13 -->
+    <string name="tt13_name">Tutorial 13 : </string>
+    <string name="tt13_title">Develop an application to send SMS and call a given number :</string>
+    <string name="tt13_desc">Also, implement runtime permission for both.</string>
+    <string name="tt13_Call">Call</string>
+    <string name="tt13_Login">Welcome</string>
+    <string name="tt13_number">Enter Phone</string>
+    <string name="tt13_message">Message</string>
+    <string name="tt13_message_txt">Enter Message</string>
+    <string name="tt13_open">Open</string>
+    <string name="tt13_code">Code</string>
+
+    <string name="calculator">Calculator</string>
+    <string name="Light">Light Mode</string>
+    <string name="taskapp">Task App</string>
+    <string name="Login">Login</string>
+    <string name="tt4_splash">Tutorial 4</string>
+    <string name="Dark">Dark Mode</string>
+    <string name="Darkmodename">Theme\'s App</string>
+    <string name="Open">Open</string>
+    <string name="Finger_auth">Finger print</string>
+    <string name="tt3_edit1_placeholder_name">Enter Username</string>
+    <string name="tt3_edit2_placeholder_name">Enter Password</string>
+    <string name="displaytext">Display Text</string>
+    <string name="welcome">Welcome to Vivek\'s App : </string>
+    <string name="tt1_text">Welcome to RK University</string>
+    <string name="theme_app">Welcome to Theme\'s App : </string>
+    <string name="user">User :</string>
+    <string name="registration">Registration Form :</string>
+    <string name="edit_hint">Enter Something :</string>
+    <string name="enter_user">Enter User :</string>
+    <string name="enter_username">Enter Username :</string>
+    <string name="reg_enter_username">Enter Username</string>
+    <string name="reg_enter_passw">Enter Password</string>
+    <string name="gender">Gender</string>
+    <string name="quali">Qualification</string>
+    <string name="branch_reg">Branch</string>
+    <string name="CE">CE</string>
+    <string name="IT">IT</string>
+    <string name="MEC">Mechanical</string>
+    <string name="ELE">Electrical</string>
+    <string name="civil">Civil</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_reg">Male / Female</string>
+    <string name="terms">By accepting this you agree to our T and C.</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_other">Other</string>
+    <string name="submit">Submit</string>
+    <string name="create">Create</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="signup">Sign Up</string>
+    <string name="clear">AC</string>
+    <string name="cancel">C</string>
+    <string name="modulo">%</string>
+    <string name="addition">+</string>
+    <string name="divison">/</string>
+    <string name="subtraction">-</string>
+    <string name="multiplication">x</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="tt4_email">Email : </string>
+    <string name="tt4_label_email">Try Email : admin@gmail.com</string>
+    <string name="tt4_pass">Password : </string>
+    <string name="tt4_label_pass">Try Password : admin</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    <string name="double_zero">00</string>
+    <string name="dot">.</string>
+    <string name="equal">=</string>
+    <string-array name="quali_arr">
+        <item>10th</item>
+        <item>12th</item>
+        <item>Bachelor</item>
+        <item>Masters</item>
+        <item>Phd</item>
+    </string-array>
+    <!--  tt5 Values  -->
+    <string-array name="tt5_city_array">
+        <item>Ahemdabad</item>
+        <item>Baroda</item>
+        <item>Jamnagar</item>
+        <item>Rajkot</item>
+    </string-array>
+    <string name="tt5_signUp">Sign Up</string>
+    <string name="tt5_fname">First Name</string>
+    <string name="tt5_lname">Last Name</string>
+    <string name="tt5_email">Email</string>
+    <string name="tt5_pass">Password</string>
+    <string name="tt5_gender_label">Gender</string>
+    <string name="tt5_gender_male">Male</string>
+    <string name="tt5_gender_female">Female</string>
+    <string name="tt5_branch_label">Branch</string>
+    <string name="tt5_branch_desc">CE / IT</string>
+    <string name="tt5_branch_ce">CE</string>
+    <string name="tt5_branch_it">IT</string>
+    <string name="tt5_city">City</string>
+    <string name="tt5_status_label">Status</string>
+    <string name="tt5_status_desc">Active / Inactive</string>
+    <string name="title_activity_tutorial4">TutorialActivity4</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!--  tt1 Values  -->
+    <!--  Finger Print Values  -->
+    <string name="Finger_text">Let\'s make a finger print lock</string>
+</resources>

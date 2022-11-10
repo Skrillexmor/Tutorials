@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TutorialActivity8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tt8_login_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sansita"
+            android:text="@string/tt8_login"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tt8_email_label"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/tt8_email"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/main"
+            app:layout_constraintTop_toBottomOf="@+id/tt8_login_label">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tt8_email_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/email_icon_selector"
+                android:drawablePadding="16dp"
+                android:inputType="text" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tt8_pass_label"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tt8_password"
+            app:counterEnabled="true"
+            app:counterMaxLength="8"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/main"
+            app:layout_constraintTop_toBottomOf="@+id/tt8_email_label">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tt8_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/lock_icon_selector"
+                android:drawablePadding="16dp"
+                android:inputType="textPassword"
+                android:maxLength="8" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/tt8_remember_me"
+            style="@style/Widget.Material3.CompoundButton.CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tt8_remember"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt8_pass_label" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tt8_Login_Button"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/main"
+            android:text="@string/Login"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt8_remember_me" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tt8_SignUp_Button"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tt8_signup"
+            android:textColor="@color/main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tt8_Login_Button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
